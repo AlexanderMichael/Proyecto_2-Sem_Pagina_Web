@@ -1,0 +1,955 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Manga Shojo</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+.tit {
+	color: #00F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	padding: 12px;
+}
+
+.titsub {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #0FF;
+	text-align: center;
+	margin:9px;
+	padding: 9px;
+}
+div.caja_transp
+   {
+	   width:100%-50px;
+	   height:100%-30px;
+	   margin: 5% 5%;
+	   background-color:#0FF;
+	   border:1px solid black;
+	   opacity:.85;
+   }
+   
+.fondo {
+	background-color: #CCC;
+	background-image: url(fondo.jpg);
+}
+
+.con {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000;
+	text-align:justify;
+}
+.con2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000;
+	text-align:justify;
+}
+
+.en {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #0FF;
+	background-color: #000;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+}
+#apDivIm {
+	position: absolute;
+	width: 348px;
+	height: 173px;
+	z-index: 1;
+	left: 643px;
+	top: 598px;
+}
+.ador {
+	border: 5px solid #00F;
+	margin: 5% 5% ;
+}
+.delim{
+	float: left;
+	border: 8px double #000;
+	text-align: center;
+	margin: 20px;
+	margin-top:60px;
+}
+.delim2{
+	float: left;
+	border: 8px double #000;
+	text-align: center;
+	margin: 10px;
+}
+</style>
+</head> 
+<body> 
+
+<div class="fondo" data-role="page" id="page">
+	<div class="tit" data-role="header">
+		Manga
+	</div>
+	<div data-role="content">	
+		<ul class="ui-bar-a" data-role="listview">
+			<li><a href="#page2"><center>¿Qué es manga?</center></a></li>
+            <li><a href="#page6"><center>Gèneros del Manga</center></a></li>
+            <li><a href="#page3"><center>¿Qué es Dōjinshi?</center></a></li>
+            <li><a href="#page4"><center>Manga por Título</center></a></li>
+            <li><a href="#page5"><center>Como Empear a Dibujar Manga</center></a></li>
+		</ul>		
+  </div>
+	<div class="tit" data-role="footer">
+		Manga
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page2">
+	<div align="center" data-role="header">
+		<span class="titsub" >¿Qué es Manga?</span>
+	</div>
+	<div class="caja_transp" data-role="content">	
+	  <span class="con">Manga es la palabra japonesa para designar a las historietas en general. Fuera de Japón se utiliza tanto para referirse a las historietas de origen japonés como al estilo de dibujo utilizado en el Manga.<br>
+      
+        El manga japonés constituye una de las tres grandes tradiciones historietistas a nivel global, junto con el la estadounidense y la franco-belga.Constituye una parte muy importante del mercado editorial de Japón y motiva múltiples adaptaciones a distintos formatos: series de animación, conocidas como anime, o de imagen real, películas, videojuegos y novelas.
+        A diferencia de las otras dos grandes escuelas de historieta (la franco-belga y la estadounidense), en el manga las viñetas y páginas se leen de derecha a izquierda, al igual que en la escritura tradicional japonesa.<br>
+  </div>
+	<div align="center" data-role="footer">
+		<span class="titsub">Página 1</span>
+        <div align="center">
+        <a href="#page"><button>Ménu Principal</button></a>
+        <a href="#page6"><button>Siguiente</button></a>
+        </div>
+	</div>
+</div>
+
+<!-- __________________________________________Dojinshi-->
+<div class="fondo" data-role="page" id="page3">
+	<div align="center" data-role="header">
+		<span class="titsub">¿Que es un Doujinshi?</span>
+	</div>
+    <div class="delim2"><img src="doujinshi_1.jpg" height="750" width="570"></div>
+  	<div class="caja_transp" data-role="content">
+    <span class="con">Los dōjinshi (同人誌?), pronunciado "dooyinshi", son historietas manga autopublicadas. Se trata normalmente de fanzines de manga. El término viene de dōjin (同人?) o 'grupo literario', que era la forma tradicional de producción, y shi (誌?), signo que significa 'revista' o 'distribución'.<br>
+    Se distinguen en categorías similares al manga: Kenzen (para niños), Shonen (para jóvenes y adolescentes), Yaoi June (para mujeres), Yuri (para hombres) y H "ecchi" o hentai (para adultos: sexo). De las tres categorías, el Yaoi ha crecido rápidamente. Algunos dōjinshi son historias originales que pueden pertenecer a cualquier categoría; otra cosa que afecta a un dōjinshi es la popularidad de un anime o manga: si tiene éxito tendrá un dōjinshi; algunas son historias inocentes pero otras no lo son. Los dōjinshi ippan no contienen material adulto y suelen ser adecuados para gente más joven.</span>
+    </div>
+    <div class="delim2"><img src="doujinshi_2.jpg" width="152" height="240"></div>
+	<div align="center" data-role="footer">
+    	<span class="titsub">Página 3</span>
+        <div align="center">
+        <a href="#page6"><button>Anterior</button></a>
+        <a href="#page"><button>Ménu Principal</button></a>
+        <a href="#page4"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<!-- Manga por titulo -->
+<div class="fondo" data-role="page" id="page4">
+	<div align="center" data-role="header">
+		<span class="titsub">Manga por Título</span>
+	</div>
+	<div class="caja_transp" data-role="content">	
+		<ul class="con" type="square">
+        <li><a href="#page3.1">99% cacao</a></li>
+        <li><a href="#page3.2">A Pudgy Girl's Love</a></li>
+        <li><a href="#page3.3">Ai kara hajimaru</a></li>
+        <li><a href="#page3.4">Akazukin to koisuru ookami</a></li>
+        <li><a href="#page3.5">Akuma no Tsuki no yoru</a></li>
+        <li><a href="#page3.6">Anta nante okotowari</a></li>
+        <li><a href="#page3.7">Beast Master</a></li>
+        <li><a href="#page3.8">Beside the One Next to You</a></li>
+        <li><a href="#page3.9">Blanc Marie</a></li>
+        <li><a href="#page3.10">Chocolate cake</a></li>
+        <li><a href="#page3.11">Dare nimo Naisho</a></li>
+        <li><a href="#page3.12">Datte yueni hatsukoi Chinura</a></li>
+        <li><a href="#page3.13">Devil Babysitter</a></li>
+        <li><a href="#page3.14">Fruits Basket</a></li>
+        <li><a href="#page3.15">Gokuaku Drop</a></li>
+        <li><a href="#page3.16">Golden Honey</a></li>
+        <li><a href="#page3.17">Hair style Amano -jaku Shiyou</a></li>
+        <li><a href="#page3.18">Hajimete Ageru!</a></li>
+        <li><a href="#page3.19">Honnou Motto Midaretai</a></li>
+        <li><a href="#page3.20">Hotel</a></li>
+        <li><a href="#page3.21">Kare to Kanojo no Futomin</a></li>
+        <li><a href="#page3.22">Kimi ga girlfriend</a></li>
+        <li><a href="#page3.23">Kimi ga hajimete</a></li>
+        <li><a href="#page3.24">Kimi no neiro</a></li>
+        <li><a href="#page3.25">Kiss X Miss</a></li>
+        <li><a href="#page3.26">Love Cruise</a></li>
+        <li><a href="#page3.27">Love Luck</a></li>
+        <li><a href="#page3.28">Love Strip</a></li>
+        <li><a href="#page3.29">Manatsu no Nureta Toiki</a></li>
+        <li><a href="#page3.30">Naisho no Jikan</a></li>
+        <li><a href="#page3.31">Nandemo Arisa</a></li>
+        <li><a href="#page3.32">Taikative Sympathy</a></li>
+        <li><a href="#page3.33">Tokimeki gakuen oujigumi</a></li>
+        <li><a href="#page3.34">Tokyo Photograph</a></li>
+        <li><a href="#page3.35">Yume Koi</a></li>
+        </ul>	
+	</div>
+	<div align="center" data-role="footer">
+    	<span class="titsub">Página 4</span><br>
+		<div class="titsub"><a href="#page3"><button>Anterior</button></a>
+        <a href="#page"><button>Menú Principal</button></a>
+        <a href="#page5"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<!-- ____________________________________________dibujar -->
+<div class="fondo" data-role="page" id="page5">
+	<div align="center" data-role="header">
+		<span class="titsub">Como Empezar a Dibujar Manga</span>
+	</div>
+    <div class="delim2" align="center"><img src="Como_2.jpg" width="598" height="870"></div>
+  	<div class="caja_transp" data-role="content">
+    <span class="con"> ¿Quieres crear tus propios manga? ó ¿Quieres hacer un Dojinshi? ¿ya tienes la historia pero no sabes dibujar?. Aqui dejare algunas paginas de manga que podran ayudarte a empezar a dibujar tus historias.<p>
+	<span class="con2">Dibujar Manga</span><p>Es una página ideal para principiantes ya que empieza desde los simientos de lo que sería el dibujo en general y mas adelante enfocandose en el dibujo manga.<p><a href="http://www.dibujamanga.com/">Ir a la página ---></a><p>
+    <span class="con2">Taller Manga</span><br>Con cursos ordenados alfabeticamente, documentos, referencias a la cultura japonesa facilita el aprendisaje.<p><a href="http://jesulink.com/tallermanga/">Ir a la página --></a></span>
+    </div>
+    <div class="delim2"><img src="Como_1.jpg"></div>
+	<div align="center" data-role="footer">
+    	<span class="titsub">Página 5</span>
+        <div align="center">
+        <a href="#page4"><button>Anterior</button></a>
+        <a href="#page"><button>Ménu Principal</button></a></div>
+	</div>
+</div>
+
+<!--___________________________________________Generos de Manga -->
+
+<div class="fondo" data-role="page" id="page6">
+	<div align="center" data-role="header">
+		<span class="titsub">Generos del Manga</span>
+	</div>
+  	<div class="caja_transp" data-role="content">
+    <span class="con2">Generos organizados por segmentos de población:</span>
+    <ul class="con" type="circle">
+    <li>Kodomo manga: dirigido a niños pequeños.</li>
+	<li>Shōnen manga: dirigido a chicos adolescentes.</li>
+	<li>Shōjo manga: dirigido a chicas adolescentes.</li>
+	<li>Seinen manga: dirigido a hombres jóvenes y adultos.</li>
+	<li>Josei manga: dirigido a mujeres jóvenes y adultas.</li>
+    </ul>
+    <span class="con2">Generos organizados por temática</span>
+    <ul class="con" type="circle">
+    <li>Progresivo: animación hecha con propósito de emular la originalidad japonesa.</li>
+	<li>Cyberpunk: la historia sucede en un mundo donde los avances tecnológicos toman parte crucial en la historia, junto con algún grado de desintegración o cambio radical en el orden social.</li>
+	<li>Ecchi: es la pronunciación de la letra H en japonés, presentando situaciones eróticas o subidas de tono llevadas a la comedia.</li>
+	<li>Furry: significa peludo, conformado de Animales antropomórficos, que es la combinación de rasgos humanos y animales.</li>
+	<li>Gekiga: término usado para los manga dirigidos a un público adulto, aunque no tiene nada que ver con el hentai. El término. literalmente. significa "imágenes dramáticas".</li>
+	<li>Gore: manga literalmente sangriento.</li>
+	<li>Harem: muchas mujeres son atraídas por un mismo hombre.</li>
+	<li>Harem Reverso: muchos hombres son atraídos por una misma mujer.</li>
+	<li>Hentai: significa literalmente "pervertido", y es el manga pornográfico.</li>
+    <li>Kemeno: humanos con rasgos de animales o viceversa.</li>
+	<li>Mahō shōjo: magical girl, chica-bruja o con poderes mágicos.</li>
+	<li>Mecha: robots gigantes.</li>
+	<li>Meitantei: es una historia policíaca. </li>
+	<li>Victoriana Fantástica: la historia sigue a un chico/chica del Siglo XIX que normalmente tiene alguna relación con alguna organización religiosa o gubernamental y que se enfrenta a energías sobrenaturales.</li>
+    <li>Victoriana Histórica: a diferencia de la fantástica, la histórica nos muestra sucesos que ocurrieron en el Siglo XIX, con un toque de romance o comedia.</li>
+    <li>Realidad virtual: en este caso los protagonistas estan dentro de un videojuego online y siguen una historia que puede ir variando mucho.</li>
+    <li>Juego de Supervivencia: este genero es bastante conocido y siempre tiene bastante gore. Las historias de este tipo tratan de varios personajes que por diversos motivos se ven obligados a participar en un juego de supervivencia ya sea matándose unos a otros o haciendo equipo con otros personajes.</li>
+    <li>Romakome:: es una comedia romántica.</li>
+    <li>Sentai:: en anime, se refiere a un grupo de superheróes.</li>
+    <li>Shōjo-ai o Yuri: romance homosexual entre chicas. Se diferencian el primero del segundo en el contenido, ya sea explícito o no.</li>
+    <li>Shōnen-ai y Yaoi: romance homosexual entre chicos u hombres. Se diferencian el primero del segundo en el contenido, ya sea explícito o no.</li>
+    <li>Spokon: historias deportivas. </li>
+    <li>Shota: romance homosexual o heterosexual entre niños menores, este también se puede dar entre un niño menor y un adulto. </li>
+    <li>Lolicon: romance homosexual o heterosexual entre niñas menores, este también se puede dar entre una niña menor y un adulto.</li>
+   <li>Kinshinsōkan: Relaciones románticas/eróticas entre miembros de la misma familia.</li>
+    </ul>
+    </div>
+    <div align="center"><img src="Prograsivo.jpg" class="delim2" height="200" width="290">
+    <img src="Ciberpunk.jpg" class="delim2" height="210" width="300" title="Ciberpunk">
+    <img src="Maho Shojo.jpg" class="delim2"  height="210" width="300">
+    <img src="Tokimeki Gakuen Oujigumi.jpg" class="delim2" height="210" width="300"></div>
+    <div align="center" data-role="footer">
+    	<span class="titsub">Página 2</span>
+        <div align="center">
+        <a href="#page2"><button>Anterior</button></a>
+        <a href="#page"><button>Ménu Principal</button></a>
+        <a href="#page3"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<!--______________________________Aqui empiezan las sinopsis del manga -->
+
+<div class="fondo" data-role="page" id="page3.1">
+	<div align="center" data-role="header">
+		<span class="titsub">99% Cacao</span>
+	</div>
+    <div class="delim"><img src="99Cacao.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Drama, Romance, Vida Escolar, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 3<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://manga.animefrontline.com/read/99_cacao_completa/es-mx/0/2/page/38">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+    <div class="titsub">
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.2"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.2">
+	<div align="center" data-role="header">
+		<span class="titsub">A Pudgy Girl's Love</span>
+	</div>
+    <div class="delim"><img src="A Pudgy Girl's Love.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Comedia, Romance, Vida Escolar, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://manga.animefrontline.com/read/a_pudgy_girls_love_one_shot/es-mx/0/1/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.1"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.3"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.3">
+	<div align="center" data-role="header">
+		<span class="titsub">Ai kara hajimaru</span>
+	</div>
+    <div class="delim"><img src="Ai kara hajimaru.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>  Romance, Vida Escolar, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 3<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://mangafox.me/manga/ai_kara_hajimaru/v01/c001/1.html">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.2"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.4"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.4">
+	<div align="center" data-role="header">
+		<span class="titsub">Akazukin to koisuru ookami</span>
+	</div>
+    <div class="delim"><img src="Akazukin to koisuru ookami.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>  Romance, Fantasía, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://mangafox.me/manga/akazukin_to_koisuru_ookami/c000/1.html">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.3"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.5"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.5">
+	<div align="center" data-role="header">
+		<span class="titsub">Akuma no Tsuki no yoru</span>
+	</div>
+    <div class="delim"><img src="Akuma no Tsuki no yoru.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>  Romance, Sobrenatural, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://mangafox.me/manga/akuma_to_tsuki_no_yoru/v00/c001/1.html">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.4"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.6"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.6">
+	<div align="center" data-role="header">
+		<span class="titsub">Anta nante Okotowari</span>
+	</div>
+    <div class="delim"><img src="Anta nante Okotowari.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>  Comedia, Romance, Harem, Romance, Shojo, Vida Escolar<br>
+    	<span class="con2">Capitulos:</span> 4<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/listado-mangas/manga/9527/Anta+nante+Okotowari">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.5"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.7"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.7">
+	<div align="center" data-role="header">
+		<span class="titsub">Beast Master</span>
+	</div>
+    <div class="delim"><img src="Beast Master.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Accion, Comedia, Romance, Shojo, Vida Escolar<br>
+    	<span class="con2">Capitulos:</span> 7<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/listado-mangas/manga/9527/Anta+nante+Okotowari">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.6"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.8"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.8">
+	<div align="center" data-role="header">
+		<span class="titsub">Beside the One Next to You</span>
+	</div>
+    <div class="delim"><img src="Beside the One Next to You Oneshot.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.7"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.9"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.9">
+	<div align="center" data-role="header">
+		<span class="titsub">Blanc Marie</span>
+	</div>
+    <div class="delim"><img src="Blanc Marie.jpg" width="350" height="248"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.8"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.10"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.10">
+	<div align="center" data-role="header">
+		<span class="titsub">Chocolate cake</span>
+	</div>
+    <div class="delim"><img src="Chocolate cake.jpg" width="350" height="250"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Vida Escolar, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.9"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.11"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.11">
+	<div align="center" data-role="header">
+		<span class="titsub">Dare nimo Naisho</span>
+	</div>
+    <div class="delim"><img src="Dare nimo Naisho.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Vida Escolar, Shoujo, Trasvestismo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.10"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.12"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.12">
+	<div align="center" data-role="header">
+		<span class="titsub">Datte yueni hatsukoi Chinura</span>
+	</div>
+    <div class="delim"><img src="Datte yueni hatsukoi Chinura.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Vida Escolar, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.11"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.13"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.13">
+	<div align="center" data-role="header">
+		<span class="titsub">Devil Babysitter</span>
+	</div>
+    <div class="delim"><img src="Devil Babysitter.jpg" width="370" height="277"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Vida Escolar, Shoujo, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.12"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.14"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.14">
+	<div align="center" data-role="header">
+		<span class="titsub">Fruits Basket</span>
+	</div>
+    <div class="delim"><img src="Fruits Basket.jpg"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Vida Escolar, Shoujo, Comedia, Trasvestismo, Drama<br>
+    	<span class="con2">Capitulos:</span> 136<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.13"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.15"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.15">
+	<div align="center" data-role="header">
+		<span class="titsub">Gokaku Drop</span>
+	</div>
+    <div class="delim"><img src="Gokaku Drop.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.14"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.16"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.16">
+	<div align="center" data-role="header">
+		<span class="titsub">Golden Honey</span>
+	</div>
+    <div class="delim"><img src="Golden Honey.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.15"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.17"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.17">
+	<div align="center" data-role="header">
+		<span class="titsub">Hair Style Amano- jaku Shiyou</span>
+	</div>
+    <div class="delim"><img src="Hair Style Amano- jaku Shiyou.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.16"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.18"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.18">
+	<div align="center" data-role="header">
+		<span class="titsub">Hajimete Ageru!</span>
+	</div>
+    <div class="delim"><img src="Hajimete Ageru!.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Shoujo, Vida Escolar<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.17"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.19"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.19">
+	<div align="center" data-role="header">
+		<span class="titsub">Honnou Motto Midaretai</span>
+	</div>
+    <div class="delim"><img src="Honnou Motto Midaretai.jpg" width="480" height="300"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span> Romance, Smut, Vida Escolar, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.18"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.20"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.20">
+	<div align="center" data-role="header">
+		<span class="titsub">Hotel</span>
+	</div>
+    <div class="delim"><img src="Hotel.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Post-Apocaliptico, Drama, Ciencia Ficcion<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.19"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.21"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.21">
+	<div align="center" data-role="header">
+		<span class="titsub">Kare to Kanojo no Futomin</span>
+	</div>
+    <div class="delim"><img src="Kare to Kanojo no Futomin.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.20"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.22"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.22">
+	<div align="center" data-role="header">
+		<span class="titsub">Kimi ga girlfriend</span>
+	</div>
+    <div class="delim"><img src="Kimi ga girlfriend.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia, Transgenero<br>
+    	<span class="con2">Capitulos:</span> 4<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.21"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.23"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.23">
+	<div align="center" data-role="header">
+		<span class="titsub">Kimi ga hajimete</span>
+	</div>
+    <div class="delim"><img src="Kimi ga hajimete.jpg" width="400" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Shojo<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.22"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.24"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.24">
+	<div align="center" data-role="header">
+		<span class="titsub">Kimi no Neiro</span>
+	</div>
+    <div class="delim"><img src="Kimi no Neiro.jpg" width="400" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Shojo, Comedia, Trasvestismo<br>
+    	<span class="con2">Capitulos:</span> 16<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.23"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.25"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.25">
+	<div align="center" data-role="header">
+		<span class="titsub">KissxMiss</span>
+	</div>
+    <div class="delim"><img src="KissxMiss.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.24"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.26"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.26">
+	<div align="center" data-role="header">
+		<span class="titsub">Love Crusie</span>
+	</div>
+    <div class="delim"><img src="Love Crusie.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.25"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.27"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.27">
+	<div align="center" data-role="header">
+		<span class="titsub">Love Luck</span>
+	</div>
+    <div class="delim"><img src="Love Luck.jpg" width="300" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 6<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.26"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.28"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.28">
+	<div align="center" data-role="header">
+		<span class="titsub">Love Strip</span>
+	</div>
+    <div class="delim"><img src="Love Strip.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia, Smut<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.27"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.29"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.29">
+	<div align="center" data-role="header">
+		<span class="titsub">Manatsu no Nureta Toiki</span>
+	</div>
+    <div class="delim"><img src="Manatsu no Nureta Toiki.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia, Smut<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.28"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.30"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.30">
+	<div align="center" data-role="header">
+		<span class="titsub">Naisho no Jikan</span>
+	</div>
+    <div class="delim"><img src="Naisho no Jikan.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 5<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.29"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.31"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.31">
+	<div align="center" data-role="header">
+		<span class="titsub">Nandemo Arisa</span>
+	</div>
+    <div class="delim"><img src="Nandemo Arisa.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.30"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.32"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.32">
+	<div align="center" data-role="header">
+		<span class="titsub">Taikative Sympathy</span>
+	</div>
+    <div class="delim"><img src="Taikative Sympathy.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia, Fantasia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.31"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.33"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.33">
+	<div align="center" data-role="header">
+		<span class="titsub">Tokimeki Gakuen Oujigumi</span>
+	</div>
+    <div class="delim"><img src="Tokimeki Gakuen Oujigumi.jpg"width="400" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia, Vida Escolar, Shojo<br>
+    	<span class="con2">Capitulos:</span> 4<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.32"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.34"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.34">
+	<div align="center" data-role="header">
+		<span class="titsub">Tokyo Photograph</span>
+	</div>
+    <div class="delim"><img src="Tokyo Photograph.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.33"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.35"><button>Siguiente</button></a></div>
+	</div>
+</div>
+
+<div class="fondo" data-role="page" id="page3.35">
+	<div align="center" data-role="header">
+		<span class="titsub">Yume Koi</span>
+	</div>
+    <div class="delim"><img src="Yume Koi.jpg" width="200" height="289"></div>
+  	<div class="caja_transp" data-role="content">
+    	<div class="con">
+    	<span class="con2">Género:</span>Romance, Comedia<br>
+    	<span class="con2">Capitulos:</span> 1<br>
+    	<span class="con2">Estado:</span><font color="#009900"> Terminado</font><br>
+    	<a href="http://www.tumangaonline.com/">Ver online...</a></div>
+	</div>
+	<div align="center" data-role="footer">
+     <div class="titsub"><a href="#page3.34"><button>Anterior</button></a>
+     <a href="#page4"><button>Listado de Mangas</button></a>
+     <a href="#page3.36"><button>Siguiente</button></a></div>
+	</div>
+</div>
+</body>
+</html>
